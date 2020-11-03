@@ -21,13 +21,14 @@
 	font: 16px/1.5 sans-serif;
   }
  
-  .gdx-lightbox-container a{
+  .lightbox-link, a.lightbox-link {
 	cursor: pointer;
   }
 
   .gdx-open-modal img {
 	  width: 20px;
 	  height: 20px;
+	  margin: -0.3% 0.2%;
   }
   
   /* MODAL

@@ -11,11 +11,16 @@ function lightbox_init($atts) {
 
   $atts = shortcode_atts( 
     array(
+      'text' => '',
       'img' => '',
       'id' => ''
     ), 
     $atts
   );
+
+    if ( ! empty( $atts['text'] ) ) {
+        $text = $atts['text'];
+    }
 
     if ( ! empty( $atts['img'] ) ) {
         $img = $atts['img'];
@@ -30,15 +35,17 @@ function lightbox_init($atts) {
       $tooltip_img = WP_PLUGIN_URL . '/gdx-lightbox-tooltip/include/assets/img/info.png';
       //$construct .= '<img src="'.$img.'">';
       
+      $construct .= '  <a type="button" class="gdx-open-modal lightbox-link" data-open="modal'.$id.'">';
 
-      $construct = '<div class="gdx-lightbox-container">';
-      $construct .= '<div class="gdx-btn-group">';
-      $construct .= '  <a type="button" class="gdx-open-modal" data-open="modal'.$id.'">';
-      $construct .= '  <img src="'.$tooltip_img.'">';
+      if(!$text){
+        $construct .= '<img src="'.$tooltip_img.'">';
+      }
+
+      if($text){
+        $construct .= $text;
+      }
+
       $construct .= '  </a>';
-      $construct .= '</div>';
-      $construct .= '</div>';
-    
     
       $construct .= '<div class="gdx-modal" id="modal'.$id.'" data-animation="slideInOutLeft">';
       $construct .= '<div class="gdx-modal-dialog">';

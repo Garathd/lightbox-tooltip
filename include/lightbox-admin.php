@@ -27,7 +27,7 @@ function lightbox_tooltip_info() {
 		wp_die('You do not have sufficient permissions!');
 	}
 	
-  include GDX_LIGHTBOX_TOOLTIP_DIR . '/include/lightbox-info.php';
+  include GDX_LIGHTBOX_TOOLTIP_DIR . '/include/lightbox-instructions.php';
 }
 // ---------------------------------------------------------------
 // CSS & JS
