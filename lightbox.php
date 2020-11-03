@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: GDX Lightbox Tooltip
-Plugin URI: https://www.gdxdesigns.com/plugins/lightbox-tooltip
+Plugin URI: https://gdxdesigns.com/plugins/lightbox-tooltip
 Description: Tooltip Lightbox Effect
 Author: GDX Designs
 Version: 1.0
-Author URI: https://www.gdxdesigns.com/
+Author URI: https://gdxdesigns.com/
 */
 
 define('GDX_LIGHTBOX_TOOLTIP_DIR', plugin_dir_path(__FILE__));
