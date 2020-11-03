@@ -18,10 +18,10 @@
 
 		<p>To use Lightbox Tooltip on a page you must first use the below shortcode</p>
         <p><strong><xmp>[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" id="1"]</xmp></strong></p>
-
+        &nbsp;
         <p>Make sure to always use a different id as well for each individual image</p>
         <p><strong><xmp>[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/little-frog.jpg" id="2"]</xmp></strong></p>
-
+		&nbsp;
         <p>To use with text instead of the information icon</p>
         <p><strong><xmp>[gdx_lightbox text="Little Frog Text" img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-hand.jpg" id="3"]</xmp></strong></p>
 
