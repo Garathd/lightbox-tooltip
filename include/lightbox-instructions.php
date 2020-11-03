@@ -24,6 +24,20 @@
 		&nbsp;
         <p>To use with text instead of the information icon</p>
         <p><strong><xmp>[gdx_lightbox text="Little Frog Text" img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-hand.jpg" id="3"]</xmp></strong></p>
+		&nbsp;
+         <p>To use with animation</p>
+        <p><strong><xmp>[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutDown" id="4"]</xmp></strong></p>
+        &nbsp;
+        <h3>Animations List</h3>
+        <ul>
+        	<li>slideInOutDown</li>
+        	<li>slideInOutTop</li>
+        	<li>slideInOutLeft (default)</li>
+        	<li>slideInOutRight</li>
+        	<li>zoomInOut</li>
+        	<li>rotateInOutDown</li>
+        	<li>mixInAnimations</li>
+        </ul>
 
 	</div>
 	&nbsp;
@@ -42,12 +56,57 @@
         <p>Here is the [gdx_lightbox text="Little Frog Text" img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-hand.jpg" id="3"]</p>
         </xmp>
 
+        <h3>Animations</h3>
+
+        <xmp>
+        <p>Frog Shadow Info Icon slideInOutDown: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutDown" id="4"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon slideInOutTop: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutTop" id="5"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon slideInOutLeft: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutLeft" id="6"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon slideInOutRight: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" id="7"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon zoomInOut: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="zoomInOut" id="8"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon rotateInOutDown: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="rotateInOutDown" id="9"]</p>
+        </xmp>
+
+        <xmp>
+        <p>Frog Shadow Info Icon mixInAnimations: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="mixInAnimations" id="10"]</p>
+        </xmp>
 	</div>
 
 	 &nbsp;
 	 <h2 class="instructions-heading" id="code-preview">Code Preview:</h2>
 	 <p>Frog Shadow Info Icon: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" id="1"]'); ?></p>
+	&nbsp;
      <p>Little Frog Info Icon: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/little-frog.jpg" id="2"]'); ?></p>
+	&nbsp;
      <p>Here is the <?php echo do_shortcode('[gdx_lightbox text="Little Frog Text" img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-hand.jpg" id="3"]'); ?></p>
+	&nbsp;
+     <h3 id="code-preview">Animations:</h3>
+
+     <p>Frog Shadow Info Icon slideInOutDown: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutDown" id="4"]'); ?></p>
+	&nbsp;
+     <p>Frog Shadow Info Icon slideInOutTop: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutTop" id="5"]'); ?></p>
+	&nbsp;
+     <p>Frog Shadow Info Icon slideInOutLeft: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutLeft" id="6"]'); ?></p>
+	&nbsp;
+     <p>Frog Shadow Info Icon slideInOutRight: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" id="7"]'); ?></p>
+	&nbsp;
+     <p>Frog Shadow Info Icon zoomInOut: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="rotateInOutDown" id="9"]'); ?></p>
+	&nbsp;
+     <p>Frog Shadow Info Icon mixInAnimations: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="mixInAnimations" id="10"]'); ?></p>
 
 </div>
