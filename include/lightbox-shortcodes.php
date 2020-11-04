@@ -14,6 +14,7 @@ function lightbox_init($atts) {
       'text' => '',
       'img' => '',
       'animate' => '',
+      'title' => '',
       'id' => ''
     ), 
     $atts
@@ -31,6 +32,10 @@ function lightbox_init($atts) {
         $animate = $atts['animate'];
     } else {
       $animate = "slideInOutLeft";
+    }
+
+    if ( ! empty( $atts['title'] ) ) {
+      $title = $atts['title'];
     }
 
     if ( ! empty( $atts['id'] ) ) {
@@ -65,6 +70,7 @@ function lightbox_init($atts) {
       $construct .= '<img src="'.$img.'">';
       $construct .= '  </section>';
       $construct .= '  <footer class="gdx-modal-footer">';
+      $construct .= '  <h3 class="gdx-modal-image-title">'.$title.'</h3>';
       $construct .= '  </footer>';
       $construct .= ' </div>';
       $construct .= ' </div>';

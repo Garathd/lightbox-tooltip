@@ -71,7 +71,7 @@
         </xmp>
 
         <xmp>
-        <p>Frog Shadow Info Icon slideInOutRight: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" id="7"]</p>
+        <p>Frog Shadow Info Icon slideInOutRight with title: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" title="Frog Image" id="7"]</p>
         </xmp>
 
         <xmp>
@@ -103,7 +103,7 @@
 	&nbsp;
      <p>Frog Shadow Info Icon slideInOutLeft: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutLeft" id="6"]'); ?></p>
 	&nbsp;
-     <p>Frog Shadow Info Icon slideInOutRight: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" id="7"]'); ?></p>
+     <p>Frog Shadow Info Icon slideInOutRight with title: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="slideInOutRight" title="Frog Image" id="7"]'); ?></p>
 	&nbsp;
      <p>Frog Shadow Info Icon zoomInOut: <?php echo do_shortcode('[gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" animate="rotateInOutDown" id="9"]'); ?></p>
 	&nbsp;
