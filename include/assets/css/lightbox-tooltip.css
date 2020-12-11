@@ -88,6 +88,10 @@
 	  text-align: center;
   }
   
+  .gdx-modal-content img {
+  	margin: 0 !important;
+  }
+
   .gdx-close-modal {
 	  float: right;
 	  cursor: pointer;

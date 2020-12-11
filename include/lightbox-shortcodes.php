@@ -47,7 +47,7 @@ function lightbox_init($atts) {
       $tooltip_img = WP_PLUGIN_URL . '/gdx-lightbox-tooltip/include/assets/img/info.png';
       //$construct .= '<img src="'.$img.'">';
       
-      $construct .= '  <a type="button" class="gdx-open-modal lightbox-link" data-open="modal'.$id.'">';
+      $construct .= '  <a type="button" id="'.$id.'" class="gdx-open-modal lightbox-link" data-open="modal'.$id.'">';
 
       if(!$text){
         $construct .= '<img src="'.$tooltip_img.'">';
