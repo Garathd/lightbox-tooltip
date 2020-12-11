@@ -47,7 +47,7 @@ function lightbox_init($atts) {
       $tooltip_img = WP_PLUGIN_URL . '/gdx-lightbox-tooltip/include/assets/img/info.png';
       //$construct .= '<img src="'.$img.'">';
       
-      $construct .= '  <a type="button" id="'.$id.'" class="gdx-open-modal lightbox-link" data-open="modal'.$id.'">';
+      $construct .= '  <a type="button" id="gdx-lighbox-modal-unique-'.$id.'" class="gdx-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
 
       if(!$text){
         $construct .= '<img src="'.$tooltip_img.'">';
@@ -59,7 +59,7 @@ function lightbox_init($atts) {
 
       $construct .= '  </a>';
     
-      $construct .= '<div class="gdx-modal" id="modal'.$id.'" data-animation="'.$animate.'">';
+      $construct .= '<div class="gdx-modal" id="gdx-lighbox-modal-'.$id.'" data-animation="'.$animate.'">';
       $construct .= '<div class="gdx-modal-dialog">';
       $construct .= '<header class="gdx-modal-header">';
       $construct .= '   <a class="gdx-close-modal" aria-label="close modal" data-close>';
