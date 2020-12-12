@@ -43,6 +43,8 @@
 	&nbsp;
 	<div class="lightbox-tooltip-instructions-content">
 		<h2 class="instructions-heading" id="code-example">Code Example:</h2>
+        &nbsp;
+        <h3>Basic</h3>
 
 		<xmp>
         <p>Frog Shadow Info Icon: [gdx_lightbox img="https://gdxdesigns.com/wp-content/uploads/2020/11/frog-shadow.jpg" id="1"]</p>
