@@ -48,7 +48,7 @@ function lightbox_init($atts) {
         $id = $atts['id'];
     }
 
-      $default_tooltip_img = WP_PLUGIN_URL . '/gdx-lightbox-tooltip/include/assets/img/info.png';
+      $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
       
       $construct = '  <a type="button" id="gdx-lighbox-modal-unique-'.$id.'" class="gdx-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
 
@@ -123,8 +123,7 @@ function lightbox_advanced($atts = array(), $content = null ) {
   
   /*Contruction*/
 
-  $default_tooltip_img = WP_PLUGIN_URL . '/gdx-lightbox-tooltip/include/assets/img/info.png';
-  //$construct .= '<img src="'.$img.'">';
+  $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
       
   $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" class="gdx-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
 

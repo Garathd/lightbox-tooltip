@@ -201,4 +201,23 @@
 	  transform: rotate(0deg);
 	}
   }
-  
+
+  /* Backend Instructions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lightbox-instructions-heading {
+	font-size: 1.8em !important;
+}
+.lightbox-instructions strong {
+	font-size: 1.2em !important;      
+}
+.gdx-open-modal img {
+	margin: -0.3em;
+	margin-left: 0.25em;
+}
+xmp {
+	white-space: normal;
+}
+.lightbox-tooltip-instructions-content xmp{
+	margin-bottom: 2em;
+}
+
