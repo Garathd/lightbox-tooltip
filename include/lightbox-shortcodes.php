@@ -5,9 +5,9 @@
 // Shortcode usage - WP editors can add the shortcodes       
 // ----------------------------------------------------------------
 
-add_shortcode('gdx_lightbox', 'lightbox_init');
+add_shortcode('gdx_lightbox', 'gdx_designs_lightbox_tooltip_init');
 
-function lightbox_init($atts) { 
+function gdx_designs_lightbox_tooltip_init($atts) { 
 
   $atts = shortcode_atts( 
     array(
@@ -88,9 +88,9 @@ function lightbox_init($atts) {
       return $construct; 
 } 
 
-add_shortcode('gdx_lightbox_text', 'lightbox_advanced');
+add_shortcode('gdx_lightbox_text', 'gdx_designs_lightbox_tooltip_advanced');
 
-function lightbox_advanced($atts = array(), $content = null ) { 
+function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null ) { 
 
   if ( ! empty( $atts['text'] ) ) {
       $text = $atts['text'];
