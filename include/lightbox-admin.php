@@ -12,7 +12,7 @@ function gdx_designs_lightbox_tooltip_admin_menu() {
 		'Lightbox Tooltip', //menu title
 		'manage_options', //capabilities
     	'lightbox_info', //menu slug
-    	'lightbox_tooltip_info', //function
+    	'gdx_designs_lightbox_tooltip_info', //function
 		'dashicons-info-outline' // icon
 	);
 }
@@ -35,7 +35,7 @@ function gdx_designs_lightbox_tooltip_info() {
 
 // Register Jquery and Styles to frontend
 add_action('wp_enqueue_scripts', 'gdx_designs_lightbox_tooltip_register_style');
-function lightbox_tooltip_register_style(){
+function gdx_designs_lightbox_tooltip_register_style(){
    wp_enqueue_script('gdx_designs_lightbox_script', plugins_url('/assets/js/lightbox-tooltip.js', __FILE__));
    wp_enqueue_style('gdx_designs_lightbox_style', plugins_url('/assets/css/lightbox-tooltip.css', __FILE__));
 }
