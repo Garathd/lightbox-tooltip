@@ -1,8 +1,3 @@
-<link rel="stylesheet" href="<?php echo plugins_url('/assets/css/lightbox-tooltip.css', __FILE__); ?>">
-<script src="<?php echo plugins_url('/assets/js/jquery.min.js', __FILE__); ?>"></script>
-<script src="<?php echo plugins_url('/assets/js/lightbox-tooltip.js', __FILE__); ?>"></script>
-
-
 <style>
     .instructions-heading {
         font-size: 1.8em !important;

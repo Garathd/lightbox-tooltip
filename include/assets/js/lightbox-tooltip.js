@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+jQuery(document).ready(function($) {
     const openEls = document.querySelectorAll("[data-open]");
     const closeEls = document.querySelectorAll("[data-close]");
     const isVisible = "is-visible";
@@ -29,3 +29,4 @@ $( document ).ready(function() {
       }
     });
 });
+
