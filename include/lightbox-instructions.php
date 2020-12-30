@@ -65,7 +65,7 @@
 	</div>
 	&nbsp;
 	<div class="lightbox-tooltip-instructions-content">
-		<h2 class="instructions-heading" id="code-example">Code Example:</h2>
+		<h2 class="lightbox-instructions-heading" id="code-example">Code Example:</h2>
         
         <h3>Basic</h3>
 
@@ -131,7 +131,7 @@
 	</div>
 
 	 &nbsp;
-	 <h2 class="instructions-heading" id="code-preview">Code Preview:</h2>
+	 <h2 class="lightbox-instructions-heading" id="code-preview">Code Preview:</h2>
 
      <h3 id="code-preview">Basic:</h3>
 	 <p>Frog Shadow Info Icon: <?php echo do_shortcode('[gdx_lightbox img="'.$frog_shadow.'" id="1"]'); ?></p>
