@@ -99,7 +99,7 @@
         <h3>Advanced</h3>
 
         <xmp>
-        <p>Embed HTML and Text Content: [gdx_lightbox_text id="12" img="<?php echo $frog_shadow; ?>"]
+        <p>Embed HTML and Text Content: [gdx_lightbox_text img="<?php echo $frog_shadow; ?>" id="12"]
 
         Enter text here and images or any html inside. All the standard shortcode attributes still work with this shortcode.
 
