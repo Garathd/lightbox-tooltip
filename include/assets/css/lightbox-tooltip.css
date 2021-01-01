@@ -30,6 +30,20 @@
 	  height: 20px;
   }
 
+  .gdx-lightbox-button {
+	padding: 10px 20px;
+    background: #000;
+    padding: 10px 20px;
+    font-weight: normal;
+	border: 2px solid #000;
+	color: #94c93b;
+  }
+
+  .gdx-lightbox-button:hover {
+	background: #FFF;
+	color: #000;
+  }
+
   /* MODAL
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .gdx-modal {

@@ -17,6 +17,7 @@ function gdx_designs_lightbox_tooltip_init($atts) {
       'animate' => '',
       'title' => '',
       'hover' => '',
+      'button' => '',
       'id' => ''
     ),
     $atts
@@ -57,32 +58,51 @@ function gdx_designs_lightbox_tooltip_init($atts) {
         $id = $atts['id'];
     }
 
-      $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
+    if ( ! empty( $atts['button'] ) ) {
+        $button = $atts['button'];
+    }
 
-      if($hover == 1) {
-        $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-      }
-
-      else {
-        $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-      }
-
-      if(!$text && !$tooltip){
-        $construct .= '<img src="'.$default_tooltip_img.'">';
-      }
-
-      else {
-        // Only Show If Tooltip is Defined
-        if($tooltip) {
-          $construct .= '<img src="'.$tooltip.'">';
+      // Checks if its using a button attribute
+      if($button) {
+        if($hover == 1) {
+          $construct = '<a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link gdx-lightbox-button" data-open="gdx-lighbox-modal-'.$id.'">';
+          $construct .= $button;
+          $construct .= '</a>';
         }
-      }
+        else {
+          $construct = '<a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link gdx-lightbox-button" data-open="gdx-lighbox-modal-'.$id.'">';
+          $construct .= $button;
+          $construct .= '</a>';
+        }
+      } // Close If (Button)
 
-      if($text){
-        $construct .= $text;
-      }
+      else {
 
-      $construct .= '  </a>';
+        $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
+
+        if($hover == 1) {
+          $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
+        }
+        else {
+          $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
+        }
+        if(!$text && !$tooltip){
+          $construct .= '<img src="'.$default_tooltip_img.'">';
+        }
+        else {
+          // Only Show If Tooltip is Defined
+          if($tooltip) {
+            $construct .= '<img src="'.$tooltip.'">';
+          }
+        }
+
+        if($text){
+          $construct .= $text;
+        }
+
+        $construct .= '  </a>';
+      } // Close Else (Not Button)
+
 
       $construct .= '<div class="gdx-modal" id="gdx-lighbox-modal-'.$id.'" data-animation="'.$animate.'">';
       $construct .= '<div class="gdx-modal-dialog">';
@@ -139,36 +159,53 @@ function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null 
     $hover = 0;
   }
 
+  if ( ! empty( $atts['button'] ) ) {
+    $button = $atts['button'];
+  }
+
   if ( ! empty( $atts['id'] ) ) {
-        $id = $atts['id'];
+    $id = $atts['id'];
   }
 
+    // Checks if its using a button attribute
+    if($button) {
+      if($hover == 1) {
+        $lightbox_data = '<a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link gdx-lightbox-button" data-open="gdx-lighbox-modal-'.$id.'">';
+        $lightbox_data .= $button;
+        $lightbox_data .= '</a>';
+      }
+      else {
+        $lightbox_data = '<a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link gdx-lightbox-button" data-open="gdx-lighbox-modal-'.$id.'">';
+        $lightbox_data .= $button;
+        $lightbox_data .= '</a>';
+      }
+    }// Close If (Button)
+    else {
+      /*Contruction*/
+      $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
 
-  /*Contruction*/
+      if($hover == 1) {
+        $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
+      }
 
-  $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
+      else {
+        $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
+      }
 
-  if($hover == 1) {
-    $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-  }
+      if(!$text && !$tooltip){
+        $lightbox_data .= '<img src="'.$default_tooltip_img.'">';
+      }
 
-  else {
-    $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-  }
+      else {
+        $lightbox_data .= '<img src="'.$tooltip.'">';
+      }
 
-  if(!$text && !$tooltip){
-    $lightbox_data .= '<img src="'.$default_tooltip_img.'">';
-  }
-
-  else {
-    $lightbox_data .= '<img src="'.$tooltip.'">';
-  }
-
-  if($text){
-    $lightbox_data .= $text;
-  }
+      if($text){
+        $lightbox_data .= $text;
+      }
 
       $lightbox_data .= '  </a>';
+    } // Close Else (Not Button)
 
       $lightbox_data .= '<div class="gdx-modal" id="gdx-lighbox-modal-'.$id.'" data-animation="'.$animate.'">';
       $lightbox_data .= '<div class="gdx-modal-dialog">';

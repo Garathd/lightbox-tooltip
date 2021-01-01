@@ -26,12 +26,16 @@
         <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_hand; ?>" id="4" tooltip="<?php echo $tooltip; ?>"]</xmp></strong></p>
         <hr />
         &nbsp;
-        <p>To use with animation:</p>
+        <p>To use with Animation:</p>
         <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_shadow; ?>" animate="slideInOutDown" id="5"]</xmp></strong></p>
         <hr />
         &nbsp;
-        <p>To use with hover instead of click:</p>
+        <p>To use with Hover instead of click:</p>
         <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_shadow; ?>" hover="1" id="13"]</xmp></strong></p>
+        <hr />
+        &nbsp;
+        <p>To use with a Button instead of tooltip or text:</p>
+        <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_shadow; ?>" button="View Image" id="14"]</xmp></strong></p>
         <hr />
         &nbsp;
         <p>To use with HTML/Text embeded inside Lightbox:</p>
@@ -63,6 +67,7 @@
             <li>animate</li>
             <li>title</li>
             <li>hover</li>
+            <li>button<i> - (doesn’t work with “text” or “tooltip”)</i></li>
             <li>id</li>
         </ul>
         &nbsp;
@@ -93,6 +98,11 @@
 
         <xmp>
         <p>Little Frog with Hover instead of click: [gdx_lightbox img="<?php echo $frog_hand; ?>" hover="1" id="13"]</p>
+        </xmp>
+        <hr />
+
+        <xmp>
+        <p>To use with a Button instead of tooltip or text: [gdx_lightbox img="<?php echo $frog_hand; ?>" button="View Image" id="14"]</p>
         </xmp>
         <hr />
 
@@ -153,6 +163,8 @@
      <p>Little Frog with Custom Icon: <?php echo do_shortcode('[gdx_lightbox img="'.$frog_hand.'" id="4" tooltip="'.$tooltip.'"]'); ?></p>
 	 &nbsp;
      <p>Little Frog with Hover instead of click: <?php echo do_shortcode('[gdx_lightbox img="'.$frog_hand.'" id="13" hover="1"]'); ?></p>
+     &nbsp;
+     <p>To use with a Button instead of tooltip or text:  <?php echo do_shortcode('[gdx_lightbox img="'.$frog_hand.'" button="View Image" id="14"]'); ?></p>
 	 &nbsp;
      <hr />
      <h3 id="code-preview">Advanced:</h3>
