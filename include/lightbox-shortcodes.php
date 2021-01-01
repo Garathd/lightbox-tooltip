@@ -2,14 +2,14 @@
 // ===============================================================
 // lightbox-shortcodes.php
 //
-// Shortcode usage - WP editors can add the shortcodes       
+// Shortcode usage - WP editors can add the shortcodes
 // ----------------------------------------------------------------
 
 add_shortcode('gdx_lightbox', 'gdx_designs_lightbox_tooltip_init');
 
-function gdx_designs_lightbox_tooltip_init($atts) { 
+function gdx_designs_lightbox_tooltip_init($atts) {
 
-  $atts = shortcode_atts( 
+  $atts = shortcode_atts(
     array(
       'text' => '',
       'tooltip' => '',
@@ -18,7 +18,7 @@ function gdx_designs_lightbox_tooltip_init($atts) {
       'title' => '',
       'hover' => '',
       'id' => ''
-    ), 
+    ),
     $atts
   );
 
@@ -36,32 +36,32 @@ function gdx_designs_lightbox_tooltip_init($atts) {
 
     if ( ! empty( $atts['animate'] ) ) {
         $animate = $atts['animate'];
-    } 
+    }
     else {
         $animate = "slideInOutLeft";
     }
- 
+
     if ( ! empty( $atts['title'] ) ) {
         $title = $atts['title'];
     }
 
     if ( ! empty( $atts['hover'] ) ) {
       $hover = $atts['hover'];
-    } 
-    
+    }
+
     else {
       $hover = 0;
-    } 
+    }
 
     if ( ! empty( $atts['id'] ) ) {
         $id = $atts['id'];
     }
 
       $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
-      
+
       if($hover == 1) {
         $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-      } 
+      }
 
       else {
         $construct = '  <a id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" type="button" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
@@ -69,7 +69,7 @@ function gdx_designs_lightbox_tooltip_init($atts) {
 
       if(!$text && !$tooltip){
         $construct .= '<img src="'.$default_tooltip_img.'">';
-      } 
+      }
 
       else {
         // Only Show If Tooltip is Defined
@@ -83,7 +83,7 @@ function gdx_designs_lightbox_tooltip_init($atts) {
       }
 
       $construct .= '  </a>';
-    
+
       $construct .= '<div class="gdx-modal" id="gdx-lighbox-modal-'.$id.'" data-animation="'.$animate.'">';
       $construct .= '<div class="gdx-modal-dialog">';
       $construct .= '<header class="gdx-modal-header">';
@@ -99,13 +99,13 @@ function gdx_designs_lightbox_tooltip_init($atts) {
       $construct .= '  </footer>';
       $construct .= ' </div>';
       $construct .= ' </div>';
-    
-      return $construct; 
-} 
+
+      return $construct;
+}
 
 add_shortcode('gdx_lightbox_text', 'gdx_designs_lightbox_tooltip_advanced');
 
-function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null ) { 
+function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null ) {
 
   if ( ! empty( $atts['text'] ) ) {
       $text = $atts['text'];
@@ -121,44 +121,44 @@ function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null 
 
   if ( ! empty( $atts['animate'] ) ) {
       $animate = $atts['animate'];
-  } 
-  
+  }
+
   else {
     $animate = "slideInOutLeft";
   }
 
   if ( ! empty( $atts['title'] ) ) {
         $title = $atts['title'];
-  } 
+  }
 
   if ( ! empty( $atts['hover'] ) ) {
     $hover = $atts['hover'];
-  } 
+  }
 
   else {
     $hover = 0;
-  } 
+  }
 
   if ( ! empty( $atts['id'] ) ) {
         $id = $atts['id'];
-  } 
+  }
 
-  
+
   /*Contruction*/
 
   $default_tooltip_img = esc_url( plugins_url( "/assets/img/info.png", __FILE__ ) ) ;
- 
+
   if($hover == 1) {
     $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="true" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
-  } 
+  }
 
   else {
     $lightbox_data = '<a type="button" id="gdx-lighbox-modal-unique-'.$id.'" data-hover="false" class="gdx-lightbox-tooltip-open-modal lightbox-link" data-open="gdx-lighbox-modal-'.$id.'">';
   }
- 
+
   if(!$text && !$tooltip){
     $lightbox_data .= '<img src="'.$default_tooltip_img.'">';
-  } 
+  }
 
   else {
     $lightbox_data .= '<img src="'.$tooltip.'">';
@@ -169,7 +169,7 @@ function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null 
   }
 
       $lightbox_data .= '  </a>';
-    
+
       $lightbox_data .= '<div class="gdx-modal" id="gdx-lighbox-modal-'.$id.'" data-animation="'.$animate.'">';
       $lightbox_data .= '<div class="gdx-modal-dialog">';
       $lightbox_data .= '<header class="gdx-modal-header">';
@@ -188,9 +188,7 @@ function gdx_designs_lightbox_tooltip_advanced($atts = array(), $content = null 
       $lightbox_data .= '  </footer>';
       $lightbox_data .= ' </div>';
       $lightbox_data .= ' </div>';
-    
+
   return $lightbox_data;
-} 
-
-
+}
 ?>

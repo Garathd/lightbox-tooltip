@@ -1,4 +1,4 @@
-<?php 
+<?php
     // Images
     $frog_hand = esc_url( plugins_url( "/assets/img/frog-hand.jpg", __FILE__ ) );
     $frog_shadow = esc_url( plugins_url( "/assets/img/frog-shadow.jpg", __FILE__ ) );
@@ -71,7 +71,7 @@
 	&nbsp;
 	<div class="lightbox-tooltip-instructions-content">
 		<h2 class="lightbox-instructions-heading" id="code-example">Code Example:</h2>
-        
+
         <h3>Basic</h3>
 
 		<xmp>
