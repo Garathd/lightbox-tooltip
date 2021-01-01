@@ -9,12 +9,22 @@ jQuery(document).ready(function($) {
         document.getElementById(modalId).classList.add(isVisible);
       });
     }
+
+    for (const el of openEls) {
+      el.addEventListener("mouseover", function() {
+        const modalId = this.dataset.open;
+        const isHover = this.dataset.hover;
+          if(isHover == "true") {
+            document.getElementById(modalId).classList.add(isVisible);
+          }
+      });
+    }
     
     for (const el of closeEls) {
       el.addEventListener("click", function() {
         this.parentElement.parentElement.parentElement.classList.remove(isVisible);
       });
-    }
+    }    
     
     document.addEventListener("click", e => {
       if (e.target == document.querySelector(".gdx-modal.is-visible")) {

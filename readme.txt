@@ -1,6 +1,6 @@
 === GDX Lightbox Tooltip ===
 
-Contributors: (@garath-davis)
+Contributors: (garath-davis)
 Tags: lightbox, tooltip
 Requires at least: 4.7
 Tested up to: 5.6

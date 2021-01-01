@@ -30,6 +30,10 @@
         <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_shadow; ?>" animate="slideInOutDown" id="5"]</xmp></strong></p>
         <hr />
         &nbsp;
+        <p>To use with hover instead of click:</p>
+        <p><strong><xmp>[gdx_lightbox img="<?php echo $frog_shadow; ?>" hover="1" id="13"]</xmp></strong></p>
+        <hr />
+        &nbsp;
         <p>To use with HTML/Text embeded inside Lightbox:</p>
         <p><strong><xmp>[gdx_lightbox_text id="12" img="<?php echo $frog_shadow; ?>"]</xmp></strong>
 
@@ -58,6 +62,7 @@
             <li>img</li>
             <li>animate</li>
             <li>title</li>
+            <li>hover</li>
             <li>id</li>
         </ul>
         &nbsp;
@@ -82,7 +87,12 @@
         </xmp>
 
         <xmp>
-        <p>Little Frog with Custom Icon: [gdx_lightbox img="<?php echo $frog_hand; ?>" id="4" tooltip="<?php echo $tooltip; ?>"]</p>
+        <p>Little Frog with Custom Icon: [gdx_lightbox img="<?php echo $frog_hand; ?>" tooltip="<?php echo $tooltip; ?>" id="4"]</p>
+        </xmp>
+        <hr />
+
+        <xmp>
+        <p>Little Frog with Hover instead of click: [gdx_lightbox img="<?php echo $frog_hand; ?>" hover="1" id="13"]</p>
         </xmp>
         <hr />
 
@@ -141,6 +151,8 @@
      <p>Here is the: <?php echo do_shortcode('[gdx_lightbox text="Little Frog Text" img="'.$frog_hand.'" id="3"]'); ?></p>
      &nbsp;
      <p>Little Frog with Custom Icon: <?php echo do_shortcode('[gdx_lightbox img="'.$frog_hand.'" id="4" tooltip="'.$tooltip.'"]'); ?></p>
+	 &nbsp;
+     <p>Little Frog with Hover instead of click: <?php echo do_shortcode('[gdx_lightbox img="'.$frog_hand.'" id="13" hover="1"]'); ?></p>
 	 &nbsp;
      <hr />
      <h3 id="code-preview">Advanced:</h3>
