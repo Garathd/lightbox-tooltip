@@ -4,7 +4,7 @@ Plugin Name: GDX Lightbox Tooltip
 Plugin URI: https://gdxdesigns.com/plugins/lightbox-tooltip
 Description: Tooltip Lightbox Effect
 Author: GDX Designs
-Version: 1.0
+Version: 1.01
 Author URI: https://gdxdesigns.com/
 */
 
